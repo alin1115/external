@@ -23,7 +23,7 @@ resource "kubernetes_deployment" "node-external-deployment" {
       }
       spec {
         container {
-          image = "rkreber/external-image:v0.1.2" #change image
+          image = "rkreber/external-image:v0.2.2" #change image
           name  = "external-container"
           image_pull_policy = "Always"
           env {
